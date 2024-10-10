@@ -1,0 +1,71 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.dashboard {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.title-card {
+  width: 100%;
+  background-color: #ffcc99; /* Naranjo más claro */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.middle-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.middle-cards .card {
+  flex: 1;
+  background-color: #ffcc99; /* Naranjo más claro */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bottom-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.bottom-cards .card {
+  flex: 1;
+  background-color: #ffcc99; /* Naranjo más claro */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: black; /* Color negro */
+  font-weight: bold; /* Negrita */
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: black; /* Color negro */
+}

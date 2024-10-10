@@ -1,0 +1,43 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-primary-500 {
+  color: #4f46e5; /* Azul */
+}
+
+.bg-primary-200 {
+  background-color: #e0e7ff; /* Naranjo claro */
+}
+
+.logo {
+  background-color: transparent; /* Ensure the background is transparent */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  transition: padding-left 0.3s;
+  color: white; /* Color original de los ítems */
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Resaltar al pasar el mouse */
+}
+
+.sidebar-submenu {
+  padding-left: 1rem;
+  transition: padding-left 0.3s;
+  color: white; /* Color original de los submenús */
+  display: none; /* Ocultar submenús por defecto */
+}
+
+.sidebar-submenu.expanded {
+  display: block; /* Mostrar submenús cuando están expandidos */
+}
+
+.bg-sidebar {
+  background-color: #f6b97c; /* Naranjo más claro */
+}

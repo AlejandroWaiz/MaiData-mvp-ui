@@ -1,0 +1,16 @@
+/* App.css */
+
+#App {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+main {
+    transition: margin-left 0.3s ease; /* Smooth transition for main content */
+    padding: 20px; /* Padding for main content */
+}
+
+/* Adjusting sidebar background color */
+.bg-sidebar {
+    background-color: #f9fafb; /* Use a light color that contrasts with the logo */
+}
