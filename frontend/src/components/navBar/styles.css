@@ -41,3 +41,11 @@
 .bg-sidebar {
   background-color: #f6b97c; /* Naranjo más claro */
 }
+
+.overflow-y-auto {
+  overflow-y: auto; /* Añadir scroll vertical */
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Asegura que el contenedor tenga la altura mínima de la pantalla */
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import "./styles.css"
 
 interface SidebarItemProps {
     active?: boolean;

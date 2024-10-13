@@ -1,5 +1,8 @@
 import React from 'react';
 import Card from './Card';
+import "./styles.css"
+import LineChart from '../charts/LineChart';
+import BarChart from '../charts/BarChart';
 
 const Dashboard: React.FC = () => {
   return (
@@ -10,9 +13,9 @@ const Dashboard: React.FC = () => {
         <Card title="Inventario" content="Inventario actual: 500 productos" />
         <Card title="Clientes" content="Clientes registrados: 300" />
       </div>
-      <div className="bottom-cards">
-        <Card title="Proveedores" content="Proveedores activos: 50" />
-        <Card title="Finanzas" content="Balance financiero: $10,000" />
+      <div className="charts-container"> {/* Nuevo contenedor para los gráficos */}
+        <LineChart />
+        <BarChart />
       </div>
     </div>
   );

@@ -13,12 +13,12 @@ interface SidebarProps {
 
 function Sidebar({ children, expanded, setExpanded }: SidebarProps) {
     return (
-        <div className="relative">
+        <div className="relative flex flex-col min-h-screen"> {/* Asegura que el contenedor principal tenga la altura mínima de la pantalla y usa flexbox */}
             <div
                 className={`fixed inset-0 bg-gray-400 transition-opacity duration-300 ${expanded ? 'opacity-50 sm:hidden' : 'opacity-0 pointer-events-none'}`}
             />
             <aside
-                className={`h-screen transition-all duration-300 ${expanded ? 'w-64' : 'w-20'} bg-sidebar`} // Cambia el fondo de la sidebar
+                className={`transition-all duration-300 ${expanded ? 'w-64' : 'w-20'} bg-sidebar flex-shrink-0 min-h-screen`} // Asegura que la barra lateral tenga la altura mínima de la pantalla
             >
                 <nav className="flex flex-col h-full border-r bg-sidebar shadow-md"> {/* Fondo ajustado aquí */}
                     <div className="flex items-center justify-between p-4 pb-2">
